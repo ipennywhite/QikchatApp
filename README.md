@@ -64,3 +64,29 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# QikchatApp
+
+QikchatApp is a Laravel-based micro-blogging and chat-sharing application featuring user authentication, categorization, and complete CRUD operations.
+
+## Requirements
+- PHP >= 8.2
+- Composer
+- MySQL / XAMPP
+
+## Installation & Setup
+1. Clone the repository and navigate to the project directory.
+2. Install dependencies:
+bash
+composer install
+npm install && npm run build
+3. Copy environment file and configure database:
+bash
+cp .env.example .env
+php artisan key:generate
+4. Run migrations:
+bash
+php artisan migrate
+5. Start development server:
+bash
+php artisan serve

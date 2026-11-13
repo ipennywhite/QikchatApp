@@ -41,4 +41,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    // Define the relationship between User and Chat models
+    public function chats() 
+    {
+        // A user can have many chats, so we define a one-to-many relationship
+        return $this->hasMany(Chat::class);
+    }
 }
