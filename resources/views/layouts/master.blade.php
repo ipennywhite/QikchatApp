@@ -13,7 +13,10 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="{{ route('chats.index') }}">💬 QikchatApp</a>
+            <a class="navbar-brand d-flex align-items-center fw-bold" href="{{ route('chats.index') }}">
+    <img src="{{ asset('images/logo.png') }}" alt="Qikchat Logo" width="30" height="30" class="d-inline-block align-text-top me-2 rounded-circle">
+    QikchatApp
+</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
